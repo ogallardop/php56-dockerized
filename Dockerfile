@@ -4,7 +4,7 @@ MAINTAINER oscar.gallardo@outlook.com
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update && apt-get upgrade && apt-get install -yq --no-install-recommends \
+RUN apt-get update && apt-get upgrade -yq && apt-get install -yq --no-install-recommends \
   apt-utils \
   curl \
   # Install git
